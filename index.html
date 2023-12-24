@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <title>Totembo</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <div class="header__nav-content">
+                    <h1 class="header__nav-title">TOTEMBO</h1>
+                    <ul class="header__nav-list">
+                        <li><a href="#products" class="header__nav-link">Часы</a></li>
+                        <li><a href="#products" class="header__nav-link">Кольца</a></li>
+                        <li><a href="#products" class="header__nav-link">Серьги</a></li>
+                        <li><a href="#products" class="header__nav-link">Браслеты</a></li>
+                        <li><a href="#products" class="header__nav-link">Цепочки</a></li>
+                        <button class="header__nav-close">
+                            <i class="fal fa-times"></i>
+                        </button>
+                    </ul>
+                    <div class="header__nav-buttons">
+                        <button class="header__nav-btn saves__open">
+                            <span class="header__saves-count">0</span>
+                            <i class="fal fa-heart"></i>
+                        </button>
+                        <button class="header__nav-btn basket__open">
+                            <span class="header__basket-count">0</span>
+                            <i class="fal fa-shopping-cart"></i>
+                        </button>
+                        <button class="header__nav-btn">
+                            <i class="fal fa-user"></i>
+                        </button>
+                        <button class="header__nav-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                        <button class="header__nav-btn burger">
+                            <i class="fal fa-bars "></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="header__items">
+                <div class="header__item">
+                    <img src="img/header_img1.png" alt="" class="header__item-img">
+                    <p class="header__item-sale">50%</p>
+                    <div class="header__item-info">
+                        <h3 class="header__item-title">Мужские часы</h3>
+                        <p class="header__item-name">Pierre Lannier</p>
+                        <p class="header__item-price">1 280 000 UZS</p>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <img src="img/header_img3.png" alt="" class="header__item-img">
+                    <p class="header__item-sale">50%</p>
+                    <div class="header__item-info">
+                        <h3 class="header__item-title">Черная мужская серьга</h3>
+                        <p class="header__item-name">Diadema grand</p>
+                        <p class="header__item-price">95 000 UZS</p>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <img src="img/header_img2.png" alt="" class="header__item-img">
+                    <p class="header__item-sale">20%</p>
+                    <div class="header__item-info">
+                        <h3 class="header__item-title">Мужские часы</h3>
+                        <p class="header__item-name">Swiss Military Chrono</p>
+                        <p class="header__item-price">1 500 000 UZS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="basket">
+        <div class="basket__modal">
+            <div class="basket__modal-top">
+                <h3 class="basket__modal-title">Корзина</h3>
+                <button class="basket__modal-btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="basket__modal-checklist">
+                
+            </div>
+            <div class="basket__modal-bottom">
+                <h3 class="basket__modal-txt">Заказать</h3>
+                <span class="basket__modal-totalPrice">0</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="saves">
+        <div class="saves__modal">
+            <div class="saves__modal-top">
+                <h3 class="saves__modal-title">Избранное</h3>
+                <button class="saves__modal-btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="saves__modal-checklist">
+                
+            </div>
+        </div>
+    </div>
+    
+    <main class="main">
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="section__title">Лидеры продаж</h2>
+                <div class="products__cards">
+                    <div class="products__card" id="cartier">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">NEW</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/cartier.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы </p>
+                        <h3 class="products__card-name">Cartier</h3>
+                        <p class="products__card-price">1 300 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="audemars">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">15%</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/audemars-p.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы</p>
+                        <h3 class="products__card-name">Audemars Piguet</h3>
+                        <p class="products__card-price">1 420 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="thcs">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">30%</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/thcs.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы</p>
+                        <h3 class="products__card-name">Tag Heuer Carrera Space</h3>
+                        <p class="products__card-price">1 120 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="duchen">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">10%</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/l-duchen.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы </p>
+                        <h3 class="products__card-name">L Duchen</h3>
+                        <p class="products__card-price">950 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="rolex">
+                        <p class="products__card-count">0</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/rolex.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы</p>
+                        <h3 class="products__card-name">Rolex</h3>
+                        <p class="products__card-price">2 450 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="spikes">
+                        <p class="products__card-count">0</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/spikes.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужское кольцо</p>
+                        <h3 class="products__card-name">Spikes</h3>
+                        <p class="products__card-price">1 450 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="pierrelannier">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">50%</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/pierre-lannier.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы </p>
+                        <h3 class="products__card-name">Pierre Lannier</h3>
+                        <p class="products__card-price">1 280 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="tiamo">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">20%</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/tiamo.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужское кольцо </p>
+                        <h3 class="products__card-name">TIAMO</h3>
+                        <p class="products__card-price">1 000 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="thcs2">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">30%</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/thcs2.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы </p>
+                        <h3 class="products__card-name">Tag Heuer Carrera Space</h3>
+                        <p class="products__card-price">1 120 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="montblanc">
+                        <p class="products__card-count">0</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/montblanc.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужской браслет</p>
+                        <h3 class="products__card-name">Montblanc</h3>
+                        <p class="products__card-price">845 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="jaeger">
+                        <p class="products__card-count">0</p>
+                        <p class="products__card-sale">10%</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/jaeger-lecoultre.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужские часы </p>
+                        <h3 class="products__card-name">Jaeger-LeCoultre</h3>
+                        <p class="products__card-price">2 450 000 UZS</p>
+                    </div>
+                    <div class="products__card" id="hockey">
+                        <p class="products__card-count">0</p>
+                        <div class="products__card-btns">
+                            <button class="products__card-btn heart">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="products__card-btn shop">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <img src="img/hockey.png" alt="" class="products__card-img">
+                        <p class="products__card-title">Мужской браслет </p>
+                        <h3 class="products__card-name">HOCKEY</h3>
+                        <p class="products__card-price">750 000 UZS</p>
+                    </div>
+                </div>
+                <h3 class="products__title">Еще</h3>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2 class="section__title">Последние новости</h2>
+                <div class="news__content">
+                    <div class="news__item">
+                        <p class="news__item-advice">Советы</p>
+                        <h3 class="news__item-title">Как выбрать первые японские часы – советы эксперта</h3>
+                        <p class="news__item-txt">Задумавшись о том, какие японские часы приобрести, следует держать в уме следующие цифры: в Японии существуют около 2800 фирм, так или иначе связанных с часовым ...
+                        </p>
+                        <p class="news__item-time">
+                            <i class="far fa-clock"></i>
+                            <span>19.04.2021 | 17:30</span>
+                        </p>
+                    </div>
+                    <div class="news__item">
+                        <p class="news__item-advice">Советы</p>
+                        <h3 class="news__item-title">HAIQIN Мужские роскошные механические часы </h3>
+                        <p class="news__item-txt">Водонепроницаемые часы с двойным турбийоном мужские автоматические часы — купить товар онлайн с бесплатной доставкой до всему миру!
+                        </p>
+                        <p class="news__item-time">
+                            <i class="far fa-clock"></i>
+                            <span>20.05.2021 | 18:30</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__lists">
+                <ul class="footer__list">
+                    <h2 class="footer__list-title">TOTEMBO</h2>
+                    <li><a href="" class="footer__list-link">Скидки</a></li>
+                    <li><a href="" class="footer__list-link">Блог</a></li>
+                    <li><a href="" class="footer__list-link">Частые вопросы</a></li>
+                    <li><a href="" class="footer__list-link">Доставка</a></li>
+                    <li><a href="" class="footer__list-link">Гарантия</a></li>
+                    <li><a href="" class="footer__list-link">Возврат</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <h2 class="footer__list-title">Товары</h2>
+                    <li><a href="" class="footer__list-link">Часы</a></li>
+                    <li><a href="" class="footer__list-link">Кольца</a></li>
+                    <li><a href="" class="footer__list-link">Серьги</a></li>
+                    <li><a href="" class="footer__list-link">Браслеты</a></li>
+                    <li><a href="" class="footer__list-link">Клатчи</a></li>
+                    <li><a href="" class="footer__list-link">Цепочки</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <h2 class="footer__list-title">Контакты</h2>
+                    <div class="footer__list-contacts">
+                        <p class="footer__list-contact">Ул. Аския, Яккасарайский район, Ташкент, Узбекистан</p>
+                        <p class="footer__list-contact">
+                            <span>+998 97 777 77 97</span>
+                            <span>+998 97 777 79 97</span>
+                        </p>
+                        <a href="" class="footer__list-contact">totembo@exapmle.com</a>
+                    </div>
+                    <h4 class="footer__list-subtitle">СОЦИАЛЬНЫЕ СЕТИ:</h4>
+                    <div class="footer__list-socials">
+                        <a href="" class="footer__list-soc">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="" class="footer__list-soc">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="" class="footer__list-soc">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script/main.js"></script>
+</body>
+
+</html>
